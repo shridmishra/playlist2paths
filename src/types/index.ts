@@ -1,3 +1,13 @@
+export interface User {
+  id: number;
+  email: string;
+  name?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+
+
 // Represents each video in the playlist
 export interface Video {
     id: string;

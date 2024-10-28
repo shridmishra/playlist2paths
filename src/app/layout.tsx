@@ -25,16 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased lg:pl-[112px]`}>
-
-
-          <SideBar/>
-
-
-        {children}
-      </body>
-    </html>
+   
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased lg:pl-[112px]`}>
+          <SideBar />
+          
+      
+          
+          {children}
+        </body>
+      </html>
+  
   );
 }
