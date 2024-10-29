@@ -204,10 +204,24 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
 
-          <div className="hidden md:block">
-            <GradientButton className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 px-6">
-              Create Now
-            </GradientButton>
+          <div className="flex justify-center">
+          <Link 
+          href="/signup" 
+         >
+          <button className="bg-gray-200 font-medium text-black hover:bg-[#2c62e0] hover:text-gray-100  mx-5 px-4 py-2 rounded-full" >
+              SignUp
+            </button>
+        </Link>
+        <Link 
+          href="/signin" 
+          
+        >
+          <button className="bg-gray-200 font-medium text-black hover:bg-[#2c62e0] hover:text-gray-100 px-4 py-2 rounded-full">
+              Login
+            </button>
+        </Link>
+        
+           
           </div>
 
           <button
@@ -248,7 +262,10 @@ const Navbar: React.FC = () => {
 
             <div className="mt-6">
               <GradientButton className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 w-full">
-                Create Now
+                SignUp
+              </GradientButton>
+              <GradientButton className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 w-full">
+                Login
               </GradientButton>
             </div>
           </div>
