@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { MapIcon } from 'lucide-react';
-import GradientButton from './ui/GradientButton';
 
 interface NavigationItem {
   label: string;
@@ -261,12 +260,12 @@ const Navbar: React.FC = () => {
             </ul>
 
             <div className="mt-6">
-              <GradientButton className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 w-full">
+              <button className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 w-full">
                 SignUp
-              </GradientButton>
-              <GradientButton className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 w-full">
+              </button>
+              <button className="bg-gradient-to-r from-[#2c62e0] to-[#2c62e0]/80 hover:from-[#2c62e0]/90 hover:to-[#2c62e0]/70 w-full">
                 Login
-              </GradientButton>
+              </button>
             </div>
           </div>
         </div>
